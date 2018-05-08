@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Items</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>All items total </h1>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name </th>
+                        <th>Group</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="item : ${items}">
+                        <td th:text="${item.id}"></td>
+                        <td th:text="${item.name}"></td>
+                        <td th:text="${item.group}"></td>
+                    </tr>
+                </tbody>
+            </table>  
+
+        </div>
+    </body>
+</html>

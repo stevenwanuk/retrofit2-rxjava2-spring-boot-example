@@ -1,0 +1,12 @@
+server:
+    port:
+        8090
+        
+spring:
+  thymeleaf:
+    reactive:
+      max-chunk-size:
+        8192
+        
+      chunked-mode-view-names:
+        "*/stream/*" 
